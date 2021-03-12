@@ -2,8 +2,8 @@
 params:
   title: 'My Journey To Transparency And Reproducibility'
   shortitle: 'My Journey To Reproducibility'
-  subtitle: '<i class="fab fa-docker"></i> & <i class="fab fa-r-project"></i>'
-  author: 'Mickaël Canouil, *Ph.D.* (<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>)'
+  subtitle: '<i class = "fab fa-docker"></i> & <i class = "fab fa-r-project"></i>'
+  author: 'Mickaël Canouil, *Ph.D.* (<a href = "http://m.canouil.fr/" target = "_blank"><i class = "fas fa-home"></i> m.canouil.fr</a>)'
   institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
   date: !r format(Sys.Date(), "The %d of %B, %Y")
   theme: "mc"
@@ -18,8 +18,8 @@ output:
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: | 
-        <div class="progress-bar-container">
-          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+        <div class = "progress-bar-container">
+          <div class = "progress-bar" style="width: calc(%current% / %total% * 100%);">
           </div>
         </div>
       ratio: "16:9"
@@ -259,7 +259,7 @@ options(
 )
 ```
 
-<div class="main-logo"></div><div class="side-logo"></div>
+<div class = "main-logo"></div><div class = "side-logo"></div>
 
 # `r params[["title"]]`
 
@@ -280,60 +280,155 @@ class: part-slide
 
 ---
 
-# Who Am I? (Definitely Not Iron Man ...)
+# Who Am I? .font50[(_Definitely Not Iron Man ..._)]
 
 .pull-left[
-* __Head of the Biostatistics Team__ of the  __Inserm U1283 / CNRS UMR 8199__ _(Functional (Epi)genomics and Molecular Physiology of Diabetes and Related Diseases)_.  
-    <img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg", width="100px" class="center" />
-
+* __Head of the Biostatistics Team__ of the __Inserm U1283 / CNRS UMR 8199__ unit _(Functional (Epi)genomics and Molecular Physiology of Diabetes and Related Diseases)_.  
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" />
+    
 * __Doctor of Philosophy (Ph.D.) in Biostatistics__.
 
-* Authored __4 <i class="fab fa-r-project"></i> packages__ on CRAN (more on Github).  
-    <img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/nacho.svg" width="100px" /><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/insane.svg" width="100px" /><img src="https://github.com/mcanouil/ggpacman/raw/master/man/figures/ggpacman.gif" width="100px" />
+* Authored __4 <i class = "fab fa-r-project"></i> packages__ on CRAN (more on Github).  
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/nacho.svg" width = "100px" />
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/insane.svg" width = "100px" />
+    <img src = "https://github.com/mcanouil/ggpacman/raw/master/man/figures/ggpacman.gif" width = "100px" />
+    
+* Contributed to __2 <i class = "fab fa-r-project"></i> packages__ on CRAN.
 
-* Contributed to __2 <i class="fab fa-r-project"></i> packages__ on CRAN.
-
-* .font70[_Watched 2,850 movies so far ..._]
+* .font80[_Watched 2,850 movies so far ..._]
 ]
 
 .pull-right[
 .center[
-<img src="https://github.com/mcanouil/ggpacman/raw/master/man/figures/README-pacman-1.gif" height="500px" />  
-_From_ `ggpacman` _on CRAN. This is only a GIF️, sorry!_
+<img src = "https://github.com/mcanouil/ggpacman/raw/master/man/figures/README-pacman-1.gif" height = "450px" />  
+_From_ `ggpacman` _on CRAN._  
+_It's only an <i class = "fab fa-r-project"></i> package to make a GIF, sorry!_
 ]
 ]
 
 <!-- 
   https://media.giphy.com/media/zK5EHMbtwfW1O/giphy.gif
-  https://media.giphy.com/media/116a8zosxwA0SI/giphy.gif
   https://media.giphy.com/media/YalzdbnnMFTBm/giphy.gif
+  https://media.giphy.com/media/qmfpjpAT2fJRK/giphy.gif
 -->
 
 ---
 class: part-slide
 
-# <img src="https://avatars1.githubusercontent.com/u/8896044?s=460&v=4" height = "150px" id = "picture" />
+# Where My Journey Started?
 
-.pull-left[
-<a href="" target="_blank"><i class="fas fa-phone"></i> +33 (0) 374 00 81 29</a> 
+![](https://media.giphy.com/media/S8ToH7Zt8gZ4u2iClh/giphy.gif)
+
+---
+
+# With A Project-oriented Workflow
+
+---
+
+# With A Project-oriented Workflow (_Or Not_)
+
+<img src = "resources/project5.png" width = 35% style = "position:absolute; top: 12%; left: 45%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project2.png" width = 34% style = "position:absolute; top: 65%; left: 65%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project3.png" width = 50% style = "position:absolute; top: 13%; left: 5%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+<img src = "https://media.giphy.com/media/116a8zosxwA0SI/giphy.gif" style = "position:absolute; top: 40%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project4.png" width = 30% style = "position:absolute; top: 72%; left: 10%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project6.png" width = 35% style = "position:absolute; top: 15%; left: 30%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project1.png" width = 45% style = "position:absolute; top: 15%; left: 47%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+---
+class: part-slide
+
+# Project Structure?
+
+--
+
+![](https://media.giphy.com/media/P2a7oxnUULoys/giphy.gif)
+
+--
+
+.font200[⇒ I can fix it!]
+
+---
+
+# Something Simple
+
+.pull-left.font150[
+* `Data`
+* `Docs`
+* `Report`
+* `Scripts`
+* `README.md`
 ]
 
 .pull-right[
-<a href="mailto:mickael.canouil@cnrs.fr" target="_blank"><i class="fas fa-envelope"></i> mickael.canouil@cnrs.fr</a> 
+<img src = "resources/project_good1.png" width = "43%" style = "position:absolute; top: 22%;" />
+]
+
+--
+
+.center.font150[
+⇒ This solved one issue, but it was the obvious one ...
+</br>
+_i.e._, data, scripts and outputs should not live in the same directory!
+]
+
+--
+
+.pull-left.font150[
+* `.git` ⇒ Let's add GIT, it can't hurt!<sup>&ast;</sup>
+]
+
+.pull-right[
+<img src = "resources/project2_version.png" width = "100%"/>
+]
+
+--
+
+.footnote[
+&ast; It did a little bit more than the project structure.
+]
+
+---
+class: part-slide
+
+# <img src = "https://avatars1.githubusercontent.com/u/8896044?s=460&v=4" height = "150px" id = "picture" />
+
+.pull-left[
+<a href = "" target = "_blank"><i class = "fas fa-phone"></i> +33 (0) 374 00 81 29</a> 
+]
+
+.pull-right[
+<a href = "mailto:mickael.canouil@cnrs.fr" target = "_blank"><i class = "fas fa-envelope"></i> mickael.canouil@cnrs.fr</a> 
 ]
 
 .center[
-<a href="http://m.canouil.fr/" target="_blank"><i class="fas fa-home"></i> m.canouil.fr</a>
+<a href = "http://m.canouil.fr" target = "_blank"><i class = "fas fa-home"></i> m.canouil.fr</a>
 
-<a href="https://github.com/mcanouil/" target="_blank"><i class="fab fa-github"></i> mcanouil</a>
+<a href = "https://github.com/mcanouil/" target = "_blank"><i class = "fab fa-github"></i> mcanouil</a>
 
-<a href="https://rlille.fr/" target="_blank"><i class="fab fa-r-project"></i> rlille.fr</a> 
+<a href = "https://rlille.fr" target = "_blank"><i class = "fab fa-r-project"></i> rlille.fr</a> 
 ]
 
 .pull-left[
-<a href="https://www.linkedin.com/in/mickael-canouil/" target="_blank"><i class="fab fa-linkedin"></i> mickael-canouil</a> 
+<a href = "https://www.linkedin.com/in/mickael-canouil/" target = "_blank"><i class = "fab fa-linkedin"></i> mickael-canouil</a> 
 ]
 
 .pull-right[
-<a href="https://twitter.com/mickaelcanouil/" target="_blank"><i class="fab fa-twitter"></i> @mickaelcanouil</a>
+<a href = "https://twitter.com/mickaelcanouil/" target = "_blank"><i class = "fab fa-twitter"></i> @mickaelcanouil</a>
 ]

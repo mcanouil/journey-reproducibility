@@ -71,7 +71,7 @@ a:hover {
 
 .footnote {
   position: absolute;
-  bottom: 3em;
+  bottom: 1em;
   padding-right: 4em;
   font-size: 90%;
 }
@@ -92,6 +92,7 @@ a:hover {
 }
 
 .part-slide {
+  color: var(--bg-colour);
   background-color: var(--font-colour);
   border-top: 80px solid var(--font-colour);
   vertical-align: middle;
@@ -195,8 +196,8 @@ blockquote {
   border-bottom: 1px solid var(--bg-colour);
 }
 
-.remark-slide table thead th { 
-  border-bottom: 1px solid #ddd; 
+.remark-slide table thead th {
+  border-bottom: 1px solid #ddd;
 }
 th, td {
   padding: 5px;
@@ -437,7 +438,7 @@ hr, .title-slide h2::after, .mline h1::after {
   }
 }
 
-.remark-code-line-highlighted { 
+.remark-code-line-highlighted {
   background-color: var(--font-colour);
   color: var(--bg-colour);
   opacity: 0.5;
