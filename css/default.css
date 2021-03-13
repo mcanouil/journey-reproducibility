@@ -94,7 +94,7 @@ a:hover {
 .part-slide {
   color: var(--bg-colour);
   background-color: var(--font-colour);
-  border-top: 80px solid var(--font-colour);
+  border-top: 80px solid transparent;
   vertical-align: middle;
   text-align: center;
 }
@@ -109,6 +109,13 @@ a:hover {
   color: var(--bg-colour) !important;
   text-decoration: none;
   font-weight: 700;
+}
+
+h1 .remark-inline-code {
+  background: var(--bg-colour);
+  color: var(--font-colour);
+  border-radius: 3px;
+  padding: 4px;
 }
 
 .title-slide a {
@@ -186,7 +193,7 @@ img, video, iframe {
 }
 
 blockquote {
-  border-left: solid 5px var(--bg-colour);
+  border-left: solid 5px var(--font-colour);
   padding-left: 1em;
 }
 

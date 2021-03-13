@@ -37,6 +37,9 @@ class: title-slide
 :root {
   --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/mc.svg);
 }
+.red { color: #b20000; }
+.green { color: #00b200; }
+.blue { color: #0000b2; }  
 ```
 
 ```{r setup, include = FALSE}
@@ -306,12 +309,6 @@ _It's only an <i class = "fab fa-r-project"></i> package to make a GIF, sorry!_
 ]
 ]
 
-<!-- 
-  https://media.giphy.com/media/zK5EHMbtwfW1O/giphy.gif
-  https://media.giphy.com/media/YalzdbnnMFTBm/giphy.gif
-  https://media.giphy.com/media/qmfpjpAT2fJRK/giphy.gif
--->
-
 ---
 class: part-slide
 
@@ -382,10 +379,10 @@ class: part-slide
 
 --
 
-.center.font150[
+.center.font150.blue[
 ⇒ This solved one issue, but it was the obvious one ...
 </br>
-_i.e._, data, scripts and outputs should not live in the same directory!
+_i.e._, data, scripts, and outputs should not live in the same directory!
 ]
 
 --
@@ -403,6 +400,266 @@ _i.e._, data, scripts and outputs should not live in the same directory!
 .footnote[
 &ast; It did a little bit more than the project structure.
 ]
+
+---
+class: part-slide
+background-image: url(https://source.unsplash.com/zFYUsLk_50Y)
+background-size: cover
+
+```{css, echo = FALSE}
+.bg-img {
+  text-shadow: 2px 2px 5px #000000
+}
+```
+
+
+# .bg-img[Infrastructure System]
+
+---
+
+# Infrastructure System
+
+<div style = "font-size: 1000%; color: #333; position: absolute; top: 35%; left: 42%;">
+  <i class = "fas fa-server"></i>
+</div>
+
+--
+
+<div style = "font-size: 500%; color: #333; position: absolute; top: 45%; left: 5%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 47%; left: 29%;">
+  <i class="fas fa-arrows-alt-h"></i>
+</div>
+
+--
+
+<div style = "font-size: 500%; color: #333; position: absolute; top: 45%; left: 78%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 47%; left: 65%;">
+  <i class="fas fa-arrows-alt-h"></i>
+</div>
+<div style = "font-size: 500%; color: #333; position: absolute; top: 12%; left: 42%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 27.5%; left: 48%;">
+  <i class="fas fa-arrows-alt-v"></i>
+</div>
+<div style = "font-size: 500%; color: #333; position: absolute; top: 79%; left: 42%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 66.5%; left: 48%;">
+  <i class="fas fa-arrows-alt-v"></i>
+</div>
+
+--
+
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 49%; left: 13.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 52%; left: 18%;">
+  <i class="fab fa-python"></i>
+</div>
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 49%; left: 86.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 52%; left: 91%;">
+  <i class="fab fa-python"></i>
+</div>
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 16.25%; left: 50.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 19.25%; left: 55%;">
+  <i class="fab fa-python"></i>
+</div>
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 83.25%; left: 50.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 86.25%; left: 55%;">
+  <i class="fab fa-python"></i>
+</div>
+
+--
+
+<div style = "font-size: 200%; color: #0000b2; position: absolute; top: 51%; left: 44%;">
+  <i class="fab fa-r-project" style = "color: #0000b2;"></i>
+  <i class="fab fa-python" style = "color: #b20000;"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 45.45%; left: 14.5%;">
+  <i class="fas fa-times"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 45.45%; left: 87.5%;">
+  <i class="fas fa-times"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 12.6%; left: 51.5%;">
+  <i class="fas fa-times"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 79.6%; left: 51.5%;">
+  <i class="fas fa-times"></i>
+</div>
+
+--
+
+<div style = "font-size: 150%; position: absolute; top: 20%; left: 8%;">
+⇒ Non-root users.
+</div>
+
+--
+
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 20%; left: 67%;">
+⇒ Not possible to install <i class = "fab fa-r-project"></i> packages or system libraries.
+</div>
+
+--
+
+<div style = "font-size: 150%; position: absolute; top: 75%; left: 8%;">
+⇒ Possible to install</br>
+<i class = "fab fa-r-project"></i> packages in user `home`.
+</div>
+
+--
+
+<div style = "font-size: 150%; color: #b20000;  position: absolute; top: 75%; left: 67%;">
+⇒ Limited storage in `home`. </br>
+<i>Not a good place anyway ...</i>
+</div>
+
+---
+class: part-slide
+
+# Flexibility & Reproducibility</br>With</br>Docker</br><i class = "fab fa-docker" style = "font-size: 400%;"></i>
+
+---
+
+# Build A Container With A Dockerfile
+
+<img src = "resources/dockerfile_v1.svg"/>
+
+--
+
+<img src = "resources/umr1283_project.svg" style = "position:absolute; top: 12%; left: 53%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 35%; left: 75%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+```{css, echo = FALSE}
+.text-block {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--bg-colour);
+  color: var(--font-colour);
+  float: right;
+  width: 40%;
+  box-shadow: 3px 5px 3px 1px #ffffff80;
+}
+```
+
+
+.text-block[
+* More than __100__ <i class = "fab fa-r-project"></i> pre-installed with RStudio server.  
+    ⇒ Increasing over time to ensure "old" projects still work.
+* Still no way to install <i class = "fab fa-r-project"></i> packages without compromising the transparency/reproducibility of the Dockerfile used.
+]
+
+---
+class: part-slide
+
+# What Do We Have Now?
+
+![](https://media.giphy.com/media/SLBr5yLzocSYw/giphy.gif)
+
+---
+
+# What Do We Have Now?
+
+.pull-left.green[
+
+* .font150[__Good__]
+
+    + A project structure __clear__.
+  
+    + __Flexibility at the system-level__ using a Dockerfile to build an image with <i class = "fab fa-r-project"></i> packages or any needed libraries.
+    
+    + __Reproducibility__, _i.e._, a project analysed using a specific Docker <i class = "fab fa-docker"></i> image can be re-analysed using that same Docker image.
+    
+]
+
+.pull-right.red[
+* .font150[__Bad__]
+
+    + Requires some __knowledge__ about system administration and Docker <i class = "fab fa-docker"></i>.
+    
+    + New __<i class = "fab fa-r-package"></i> packages cannot be installed__ without having to build a new Docker <i class = "fab fa-docker"></i> image.
+    
+    + <i class = "fab fa-r-package"></i> packages are __not project-specific__, unless you create a Docker <i class = "fab fa-docker"></i> image for each.
+    
+    + To build or run Docker, users are __required to be `root`__.
+    
+]
+
+.center.blue[
+.font150[
+⇒ What if there is a way to __install any <i class = "fab fa-r-package"></i> packages__ (_and Python <i class = "fab fa-python"></i> modules_),  to __record versions__, and to be able to automatically __restore/reinstall all the__ <i class = "fab fa-r-package"></i> __packages of a specific project__?
+]
+.font120[
+All that without any interference with the system (_e.g._, Docker container, laptop, _etc._).
+]
+]
+
+---
+class: part-slide
+
+# <img src = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/renv.svg" width = "200px" />
+
+![](https://media.giphy.com/media/zK5EHMbtwfW1O/giphy.gif)
+
+---
+
+```{css, echo = FALSE}
+.bqm {
+  border-left: solid 5px var(--font-colour);
+  padding-left: 1em;
+}
+.sign {
+  float: right;
+  width: 25%;
+}
+```
+
+# What Is `renv`?
+
+.bqm[
+
+The `renv` package helps you create __r__eproducible __env__ironments for your <i class = "fab fa-r-project"></i> projects.
+
+Use `renv` to make your R projects more:
+
+* __Isolated__: Installing a new or updated package for one project won’t break your other projects, and vice versa.  
+    That’s because `renv` gives each project its own private package library.
+
+* __Portable__: Easily transport your projects from one computer to another, even across different platforms.  
+    `renv` makes it easy to install the packages your project depends on.
+
+* __Reproducible__: `renv` records the exact package versions you depend on, and ensures those exact versions are the ones that get installed wherever you go.
+
+.sign[
+[https://rstudio.github.io/renv/](https://rstudio.github.io/renv/)
+]
+
+]
+
+---
+
+# Docker <i class = "fab fa-docker"></i> & `renv`
+
+<img src = "resources/dockerfile_v2.svg"/>
+
+---
+class: part-slide
+
+# ![](https://media.giphy.com/media/YalzdbnnMFTBm/giphy.gif)
 
 ---
 class: part-slide
