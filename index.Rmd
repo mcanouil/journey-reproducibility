@@ -526,9 +526,37 @@ background-size: cover
 </div>
 
 ---
+
+# Lack Of A Reproducible Environment
+
+.font150[
+
+.pull-left[
++ __Code errors__  
+    The same code can give different results on different platforms/machines.
+]
+
+.pull-right[
++ __Affecting multiple projects__  
+    In a global and shared environment, any changes in system libraries and <i class = "fab fa-r-project"></i> packages can change or crash any unrelated projects.
+]
+
+.pull-left[  
++ __Difficult system deployment (for user/developer)__  
+    Establishing and maintaining infrastructure is challenging if not tracked properly, especially over time.
+]
+
+.pull-right[
++ __Painful collaboration__  
+    Team/User will most likely waste time setting up new environment rather than starting developing.
+]
+
+]
+
+---
 class: part-slide
 
-# Flexibility & Reproducibility</br>With</br>Docker</br><i class = "fab fa-docker" style = "font-size: 400%;"></i>
+# Reproducible Development/Analysis Workflow</br>With</br>Docker</br><i class = "fab fa-docker" style = "font-size: 400%;"></i>
 
 ---
 
@@ -558,17 +586,10 @@ class: part-slide
 
 
 .text-block[
-* More than __100__ <i class = "fab fa-r-project"></i> pre-installed with RStudio server.  
+* More than __100 <i class = "fab fa-r-project"></i> packages__ pre-installed.  
     ⇒ Increasing over time to ensure "old" projects still work.
 * Still no way to install <i class = "fab fa-r-project"></i> packages without compromising the transparency/reproducibility of the Dockerfile used.
 ]
-
----
-class: part-slide
-
-# What Do We Have Now?
-
-![](https://media.giphy.com/media/SLBr5yLzocSYw/giphy.gif)
 
 ---
 
@@ -601,10 +622,10 @@ class: part-slide
 
 .center.blue[
 .font150[
-⇒ What if there is a way to __install any <i class = "fab fa-r-package"></i> packages__ (_and Python <i class = "fab fa-python"></i> modules_),  to __record versions__, and to be able to automatically __restore/reinstall all the__ <i class = "fab fa-r-package"></i> __packages of a specific project__?
+⇒ What if there is a way to __install any__ <i class = "fab fa-r-package"></i> __packages__ (_and Python <i class = "fab fa-python"></i> modules_),  to __record versions__, and to be able to automatically __restore/reinstall all the__ <i class = "fab fa-r-package"></i> __packages of a specific project__?
 ]
 .font120[
-All that without any interference with the system (_e.g._, Docker container, laptop, _etc._).
+All that without any "interference" with the system (_e.g._, Docker container, laptop, _etc._).
 ]
 ]
 
@@ -630,7 +651,7 @@ class: part-slide
 
 # What Is `renv`?
 
-.bqm[
+.bqm.font120[
 
 The `renv` package helps you create __r__eproducible __env__ironments for your <i class = "fab fa-r-project"></i> projects.
 
@@ -652,14 +673,84 @@ Use `renv` to make your R projects more:
 
 ---
 
+# How Does `renv` Work?
+
+---
+
 # Docker <i class = "fab fa-docker"></i> & `renv`
 
 <img src = "resources/dockerfile_v2.svg"/>
+
+--
+
+<img src = "resources/umr1283_project_renv.svg" style = "position:absolute; top: 12%; left: 64%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 32%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+
+---
+
+# What Do We Have Now?
+
+.pull-left.green[
+
+* .font150[__Good__]
+
+    + A project structure __clear__.
+  
+    + __Flexibility at the system-level__ using a Dockerfile to build an image with system libraries.
+    
+    + __Flexibility at the project-level__ using  `renv`.
+        + New __<i class = "fab fa-r-package"></i> packages can be installed/restored__ without having to build a new Docker <i class = "fab fa-docker"></i> image.
+        + <i class = "fab fa-r-package"></i> packages are __project-specific__.
+    
+    + __Reproducibility__, _i.e._, Docker + `renv`.  
+        The underlying system, its dependencies, and required <i class = "fab fa-r-package"></i> packages, are fixed and constant for a particular project.
+    
+]
+
+.pull-right.red[
+* .font150[__Bad__]
+
+    + Requires some __knowledge__ about system administration and Docker <i class = "fab fa-docker"></i>.
+    
+    + To build or run Docker, users are __required to be `root`__.
+    
+]
+
+---
+
+# How To Reduce Cognitive Load For New Users?
+
++ .font150[Remaining issues]
+
+    + Having to learn about system administration (_i.e._, Debian, Ubuntu, MacOS, Windows, _etc._) __can be a hassle__, especially for beginners.
+
+    + Mostly for security reasons, __users should not be `root`__ for day-to-day work (or in general).
+
+--
+
++ .font150[Solutions] 
+
+    + ⇒ Build a Docker image with RStudio server, <i class = "fab fa-r-project"></i>, and with "all" required system libraries (Docker containers as a _daemon_).
+        + A user has __a non-root account__ to log in through a web browser to the IDE (_i.e._, RStudio).
+        + A user __can develop, code an analysis__ in a shared environment with a __project-oriented workflow__ built around `renv`.
+        + __No prior knowledge__ about Docker is required.
+        + Scripts can still be launched directly in Docker without a _daemon_.
+    
+    + ⇒ __Singularity__ ([](https://sylabs.io/singularity/)) to run containers __without root privileges__, including Docker containers.
 
 ---
 class: part-slide
 
 # ![](https://media.giphy.com/media/YalzdbnnMFTBm/giphy.gif)
+
+
+---
+class: part-slide
+
+# What Do We Have Now?
+
+![](https://media.giphy.com/media/SLBr5yLzocSYw/giphy.gif)
 
 ---
 class: part-slide
