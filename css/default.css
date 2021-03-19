@@ -44,6 +44,13 @@
   background-repeat: no-repeat;
 }
 
+.slide-url {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-style: italic;
+}
+
 #picture {
   border-style: solid;
   border-width: 2pt;
@@ -119,7 +126,7 @@ h1 .remark-inline-code {
 }
 
 .title-slide a {
-  color: inherit;
+  color: #7F7F7F;
   text-decoration: none;
   border-bottom: none;
 }

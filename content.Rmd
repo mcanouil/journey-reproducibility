@@ -1,0 +1,641 @@
+class: part-slide
+
+```{css, echo = FALSE}
+.red { color: #b20000; }
+.green { color: #00b200; }
+.blue { color: #0000b2; } 
+```
+
+
+# Who Am I?
+
+![](https://media.giphy.com/media/2y6ElJES2O0E0/giphy.gif)
+
+---
+
+# Who Am I? .font50[(_Definitely Not Iron Man ..._)]
+
+.pull-left[
+* __Head of the Biostatistics Team__ of the __Inserm U1283 / CNRS UMR 8199__ unit _(Functional (Epi)genomics and Molecular Physiology of Diabetes and Related Diseases)_.  
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" />
+    
+* __Doctor of Philosophy (Ph.D.) in Biostatistics__.
+
+* Authored __4 <i class = "fab fa-r-project"></i> packages__ on CRAN (more on Github).  
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/nacho.svg" width = "100px" />
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/insane.svg" width = "100px" />
+    <img src = "https://github.com/mcanouil/ggpacman/raw/master/man/figures/ggpacman.gif" width = "100px" />
+    
+* Contributed to __2 <i class = "fab fa-r-project"></i> packages__ on CRAN.
+
+* .font80[_Watched 2,850 movies so far ..._]
+]
+
+.pull-right[
+.center[
+<img src = "https://github.com/mcanouil/ggpacman/raw/master/man/figures/README-pacman-1.gif" height = "450px" />  
+_From_ `ggpacman` _on CRAN._  
+_It's only an <i class = "fab fa-r-project"></i> package to make a GIF, sorry!_
+]
+]
+
+---
+class: part-slide
+
+# Where My Journey Started?
+
+![](https://media.giphy.com/media/S8ToH7Zt8gZ4u2iClh/giphy.gif)
+
+---
+
+# With A Project-oriented Workflow
+
+---
+
+# With A Project-oriented Workflow (_Or Not_)
+
+<img src = "resources/project5.png" width = 35% style = "position:absolute; top: 12%; left: 45%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project2.png" width = 34% style = "position:absolute; top: 65%; left: 65%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project3.png" width = 50% style = "position:absolute; top: 13%; left: 5%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+<img src = "https://media.giphy.com/media/116a8zosxwA0SI/giphy.gif" style = "position:absolute; top: 40%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project4.png" width = 30% style = "position:absolute; top: 72%; left: 10%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project6.png" width = 35% style = "position:absolute; top: 15%; left: 30%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+<img src = "resources/project1.png" width = 45% style = "position:absolute; top: 15%; left: 47%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+---
+class: part-slide
+
+# Project Structure?
+
+--
+
+![](https://media.giphy.com/media/P2a7oxnUULoys/giphy.gif)
+
+--
+
+.font200[⇒ I can fix it!]
+
+---
+
+# Something Simple
+
+.pull-left.font150[
+* `Data`
+* `Docs`
+* `Report`
+* `Scripts`
+* `README.md`
+]
+
+.pull-right[
+<img src = "resources/project_good1.png" width = "43%" style = "position:absolute; top: 22%;" />
+]
+
+--
+
+.center.font150.blue[
+⇒ This solved one issue, but it was the obvious one ...
+</br>
+_i.e._, data, scripts, and outputs should not live in the same directory!
+]
+
+--
+
+.pull-left.font150[
+* `.git` ⇒ Let's add GIT, it can't hurt!<sup>&ast;</sup>
+]
+
+.pull-right[
+<img src = "resources/project2_version.png" width = "100%"/>
+]
+
+--
+
+.footnote[
+&ast; It did a little bit more than the project structure.
+]
+
+---
+class: part-slide
+background-image: url(https://source.unsplash.com/zFYUsLk_50Y)
+background-size: cover
+
+```{css, echo = FALSE}
+.bg-img {
+  text-shadow: 2px 2px 5px #000000
+}
+```
+
+
+# .bg-img[Infrastructure System]
+
+---
+
+# Infrastructure System
+
+<div style = "font-size: 1000%; color: #333; position: absolute; top: 35%; left: 42%;">
+  <i class = "fas fa-server"></i>
+</div>
+
+--
+
+<div style = "font-size: 500%; color: #333; position: absolute; top: 45%; left: 5%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 47%; left: 29%;">
+  <i class="fas fa-arrows-alt-h"></i>
+</div>
+
+--
+
+<div style = "font-size: 500%; color: #333; position: absolute; top: 45%; left: 78%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 47%; left: 65%;">
+  <i class="fas fa-arrows-alt-h"></i>
+</div>
+<div style = "font-size: 500%; color: #333; position: absolute; top: 12%; left: 42%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 27.5%; left: 48%;">
+  <i class="fas fa-arrows-alt-v"></i>
+</div>
+<div style = "font-size: 500%; color: #333; position: absolute; top: 79%; left: 42%;">
+  <i class="fas fa-user" ></i><i class="fas fa-desktop"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 66.5%; left: 48%;">
+  <i class="fas fa-arrows-alt-v"></i>
+</div>
+
+--
+
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 49%; left: 13.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 52%; left: 18%;">
+  <i class="fab fa-python"></i>
+</div>
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 49%; left: 86.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 52%; left: 91%;">
+  <i class="fab fa-python"></i>
+</div>
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 16.25%; left: 50.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 19.25%; left: 55%;">
+  <i class="fab fa-python"></i>
+</div>
+<div style = "font-size: 150%; color: #0000b2; position: absolute; top: 83.25%; left: 50.75%;">
+  <i class="fab fa-r-project"></i>
+</div>
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 86.25%; left: 55%;">
+  <i class="fab fa-python"></i>
+</div>
+
+--
+
+<div style = "font-size: 200%; color: #0000b2; position: absolute; top: 51%; left: 44%;">
+  <i class="fab fa-r-project" style = "color: #0000b2;"></i>
+  <i class="fab fa-python" style = "color: #b20000;"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 45.45%; left: 14.5%;">
+  <i class="fas fa-times"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 45.45%; left: 87.5%;">
+  <i class="fas fa-times"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 12.6%; left: 51.5%;">
+  <i class="fas fa-times"></i>
+</div>
+<div style = "font-size: 400%; color: #333; position: absolute; top: 79.6%; left: 51.5%;">
+  <i class="fas fa-times"></i>
+</div>
+
+--
+
+<div style = "font-size: 150%; position: absolute; top: 20%; left: 8%;">
+⇒ Non-root users.
+</div>
+
+--
+
+<div style = "font-size: 150%; color: #b20000; position: absolute; top: 20%; left: 67%;">
+⇒ Not possible to install <i class = "fab fa-r-project"></i> packages or system libraries.
+</div>
+
+--
+
+<div style = "font-size: 150%; position: absolute; top: 75%; left: 8%;">
+⇒ Possible to install</br>
+<i class = "fab fa-r-project"></i> packages in user home.
+</div>
+
+--
+
+<div style = "font-size: 150%; color: #b20000;  position: absolute; top: 75%; left: 67%;">
+⇒ Limited storage in home. </br>
+<i>Not a good place anyway ...</i>
+</div>
+
+---
+
+# Lack Of A Reproducible Environment
+
+.font150[
+
+.pull-left[
++ __Code errors__  
+    The same code can give different results on different platforms/machines.
+]
+
+.pull-right[
++ __Affecting multiple projects__  
+    In a global and shared environment, any changes in system libraries and <i class = "fab fa-r-project"></i> packages can change or crash any unrelated projects.
+]
+
+.pull-left[  
++ __Difficult system deployment (for user/developer)__  
+    Establishing and maintaining infrastructure is challenging if not tracked properly, especially over time.
+]
+
+.pull-right[
++ __Painful collaboration__  
+    Team/User will most likely waste time setting up new environment rather than starting developing.
+]
+
+]
+
+---
+class: part-slide
+
+# Reproducible Development/Analysis Workflow</br>With</br>Docker</br><i class = "fab fa-docker" style = "font-size: 400%;"></i>
+
+---
+
+# Build A Container With A Dockerfile
+
+<img src = "resources/dockerfile_v1.svg"/>
+
+--
+
+<img src = "resources/umr1283_project.svg" style = "position:absolute; top: 12%; left: 53%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 35%; left: 75%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+--
+
+```{css, echo = FALSE}
+.text-block {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--bg-colour);
+  color: var(--font-colour);
+  float: right;
+  width: 40%;
+  box-shadow: 3px 5px 3px 1px #ffffff80;
+}
+```
+
+
+.text-block[
+* More than __100 <i class = "fab fa-r-project"></i> packages__ pre-installed.  
+    ⇒ Increasing over time to ensure "old" projects still work.
+* Still no way to install <i class = "fab fa-r-project"></i> packages without compromising the transparency/reproducibility of the Dockerfile used.
+]
+
+---
+
+# What Do We Have Now?
+
+.pull-left.green[
+
+* .font150[__Good__]
+
+    + A project structure __clear__.
+  
+    + __Flexibility at the system-level__ using a Dockerfile to build an image with <i class = "fab fa-r-project"></i> packages or any needed libraries.
+    
+    + __Reproducibility__, _i.e._, a project analysed using a specific Docker <i class = "fab fa-docker"></i> image can be re-analysed using that same Docker image.
+    
+]
+
+.pull-right.red[
+* .font150[__Bad__]
+
+    + Requires some __knowledge__ about system administration and Docker <i class = "fab fa-docker"></i>.
+    
+    + New __<i class = "fab fa-r-package"></i> packages cannot be installed__ without having to build a new Docker <i class = "fab fa-docker"></i> image.
+    
+    + <i class = "fab fa-r-package"></i> packages are __not project-specific__, unless you create a Docker <i class = "fab fa-docker"></i> image for each.
+    
+    + To build or run Docker, users are __required to be `root`__.
+    
+]
+
+.center.blue[
+.font150[
+⇒ What if there is a way to __install any__ <i class = "fab fa-r-package"></i> __packages__ (_and Python <i class = "fab fa-python"></i> modules_),  to __record versions__, and to be able to automatically __restore/reinstall all the__ <i class = "fab fa-r-package"></i> __packages of a specific project__?
+]
+.font120[
+All that without any "interference" with the system (_e.g._, Docker container, laptop, _etc._).
+]
+]
+
+---
+class: part-slide
+
+# <img src = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/renv.svg" width = "200px" />
+
+![](https://media.giphy.com/media/zK5EHMbtwfW1O/giphy.gif)
+
+---
+
+```{css, echo = FALSE}
+.bqm {
+  border-left: solid 5px var(--font-colour);
+  padding-left: 1em;
+}
+.sign {
+  float: right;
+  width: 25%;
+}
+```
+
+# What Is `renv`?
+
+.bqm.font120[
+
+The `renv` package helps you create __r__eproducible __env__ironments for your <i class = "fab fa-r-project"></i> projects.
+
+Use `renv` to make your R projects more:
+
+* __Isolated__: Installing a new or updated package for one project won’t break your other projects, and vice versa.  
+    That’s because `renv` gives each project its own private package library.
+
+* __Portable__: Easily transport your projects from one computer to another, even across different platforms.  
+    `renv` makes it easy to install the packages your project depends on.
+
+* __Reproducible__: `renv` records the exact package versions you depend on, and ensures those exact versions are the ones that get installed wherever you go.
+
+.sign[
+[https://rstudio.github.io/renv/](https://rstudio.github.io/renv/)
+]
+
+]
+
+---
+
+# `renv` Overview
+
+.pull-left[
+
++ `activate` - Activate a Project.
++ `clean` - Clean a Project.
++ `consent` - Consent to usage of `renv`
++ `deactivate` - Deactivate a Project.
++ `dependencies` - Find R Package Dependencies in a Project.
++ `diagnostics` - Print a Diagnostics Report.
++ `equip` - Install Required System Libraries (Windows).
++ `history` - View Lockfile History (Git).
++ `hydrate` - Hydrate a Project.
++ `init` - Initialise a Project.
++ `install` - Install Packages.
++ `isolate` - Isolate a Project
++ `load` - Load a Project.
++ `migrate` - Migrate a Project from `Packrat` to `renv`
++ `modify` - Open the Lockfile for Editing.
++ `paths` - Path Customization.
++ `project` - Retrieve the Active Project.
+
+]
+
+.pull-right[
+
++ `purge` - Purge Packages from the Cache.
++ `rebuild` - Rebuild the Packages in your Project Library.
++ `record` - Update Package Records in a Lockfile.
++ `refresh` - Refresh the Local Cache of Available Packages.
++ `rehash` - Re-Hash Packages in the renv Cache.
++ `remove` - Remove Packages.
++ `restore` - Restore a Project.
++ `revert` - Revert Lockfile (Git).
++ `run` - Run a Script.
++ `scaffold` - Generate renv Project Infrastructure.
++ `settings` - Project Settings.
++ `snapshot` - Snapshot a Project.
++ `status` - Status.
++ `update` - Update Packages.
++ `upgrade` - Upgrade `renv`
++ `use_python` - Use Python.
+
+]
+
+---
+
+# `renv` Overview
+
+```{css, echo = FALSE}
+.alpha25 {
+  opacity: 0.25;
+}
+```
+
+
+.pull-left[
+
++ `activate` - Activate a Project.
++ .alpha25[`clean` - Clean a Project.]
++ .alpha25[`consent` - Consent to usage of `renv`.]
++ `deactivate` - Deactivate a Project.
++ .alpha25[`dependencies` - Find R Package Dependencies in a Project.]
++ .alpha25[`diagnostics` - Print a Diagnostics Report.]
++ .alpha25[`equip` - Install Required System Libraries (Windows).]
++ .alpha25[`history` - View Lockfile History (Git).]
++ `hydrate` - Hydrate a Project.
++ `init` - Initialise a Project.
++ `install` - Install Packages.
++ `isolate` - Isolate a Project.
++ .alpha25[`load` - Load a Project.]
++ .alpha25[`migrate` - Migrate a Project from `Packrat` to `renv`]
++ .alpha25[`modify` - Open the Lockfile for Editing.]
++ .alpha25[`paths` - Path Customization.]
++ .alpha25[`project` - Retrieve the Active Project.]
+
+]
+
+.pull-right[
+
++ .alpha25[`purge` - Purge Packages from the Cache.]
++ .alpha25[`rebuild` - Rebuild the Packages in your Project Library.]
++ .alpha25[`record` - Update Package Records in a Lockfile.]
++ .alpha25[`refresh` - Refresh the Local Cache of Available Packages.]
++ .alpha25[`rehash` - Re-Hash Packages in the `renv` Cache.]
++ `remove` - Remove Packages.
++ `restore` - Restore a Project.
++ .alpha25[`revert` - Revert Lockfile (Git).]
++ .alpha25[`run` - Run a Script.]
++ .alpha25[`scaffold` - Generate `renv` Project Infrastructure.]
++ .alpha25[`settings` - Project Settings.]
++ `snapshot` - Snapshot a Project.
++ .alpha25[`status` - Status.]
++ `update` - Update Packages.
++ .alpha25[`upgrade` - Upgrade `renv`.]
++ .alpha25[`use_python` - Use Python.]
+
+]
+
+---
+class: part-slide
+
+# How Does `renv` Work?
+
+![](https://media.giphy.com/media/YalzdbnnMFTBm/giphy.gif)
+
+.font200[_DEMO<sup>&ast;</sup>_]
+
+.footnote[
+_&ast; Be prepared, it will not work as planned ..._
+]
+
+---
+
+# `renv` When Building A Docker Container
+
+```{bash, eval = FALSE}
+ENV RENV_VERSION 0.13.1
+RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
+RUN R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
+WORKDIR /project
+COPY renv.lock renv.lock
+RUN R -e 'renv::restore()'
+```
+ 
+---
+
+# `renv` When Using A Docker Container
+
++ Without the auto-loader.  
+    ```{bash, eval = FALSE}
+     docker run \
+        --detach \
+        --rm \
+        --volume /media/shared/renv_cache:/renv_cache \
+        --env "RENV_PATHS_CACHE=/renv_cache" \
+        --volume /media/Project:/project \
+        rocker/r-base R --vanilla -e 'setwd("/project"); renv::restore(); source("scripts/01-first_analysis.R")'
+    ```
+    
++ With the auto-loader.  
+    ```{bash, eval = FALSE}
+     docker run \
+        --detach \
+        --rm \
+        --volume /media/shared/renv_cache:/renv_cache \
+        --env "RENV_PATHS_CACHE=/renv_cache" \
+        --volume /media/Project:/project \
+        rocker/r-base /bin/bash -c "cd /project; R -e 'source(\"scripts/01-first_analysis.R\")'
+    ```
+
+---
+
+# Docker <i class = "fab fa-docker"></i> & `renv`
+
+<img src = "resources/dockerfile_v2.svg"/>
+
+--
+
+<img src = "resources/umr1283_project_renv.svg" style = "position:absolute; top: 12%; left: 64%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 32%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+
+
+---
+
+# What Do We Have Now?
+
+.pull-left.green[
+
+* .font150[__Good__]
+
+    + A project structure __clear__.
+  
+    + __Flexibility at the system-level__ using a Dockerfile to build an image with system libraries.
+    
+    + __Flexibility at the project-level__ using  `renv`.
+        + New __<i class = "fab fa-r-package"></i> packages can be installed/restored__ without having to build a new Docker <i class = "fab fa-docker"></i> image.
+        + <i class = "fab fa-r-package"></i> packages are __project-specific__.
+    
+    + __Reproducibility__, _i.e._, Docker + `renv`.  
+        The underlying system, its dependencies, and required <i class = "fab fa-r-package"></i> packages, are fixed and constant for a particular project.
+    
+]
+
+.pull-right.red[
+* .font150[__Bad__]
+
+    + Requires some __knowledge__ about system administration and Docker <i class = "fab fa-docker"></i>.
+    
+    + To build or run Docker, users are __required to be `root`__.
+    
+]
+
+---
+
+# How To Reduce Cognitive Load For New Users?
+
++ .font150[Remaining issues]
+
+    + Having to learn about system administration (_i.e._, Debian, Ubuntu, MacOS, Windows, _etc._) __can be a hassle__, especially for beginners.
+
+    + Mostly for security reasons, __users should not be `root`__ for day-to-day work (or in general).
+
+--
+
++ .font150[Solutions] 
+
+    + ⇒ Build a Docker image with RStudio server, <i class = "fab fa-r-project"></i>, and with "all" required system libraries (Docker containers as a _daemon_).
+        + A user has __a non-root account__ to log in through a web browser to the IDE (_i.e._, RStudio).
+        + A user __can develop, code an analysis__ in a shared environment with a __project-oriented workflow__ built around `renv`.
+        + __No prior knowledge__ about Docker is required.
+        + Scripts can still be launched directly in Docker without a _daemon_.
+    
+    + ⇒ __Singularity__ ([](https://sylabs.io/singularity/)) to run containers __without root privileges__, including Docker containers.
+
+---
+class: part-slide
+
+# What's Next?<br>Extend & Improve
+
+![](https://media.giphy.com/media/SLBr5yLzocSYw/giphy.gif)
+
+---
+
+# Next? Extend & Improve
+
+.font150[
+
++ Use [`targets`](https://docs.ropensci.org/targets/) from [__rOpenSci__](https://ropensci.org/) to design/improve analysis workflow.  
+<img src = "https://raw.githubusercontent.com/ropensci/targets/main/man/figures/logo-font.svg" width = "100px" />
+
++ Switch to Singularity.
+
++ Any suggestion?
+
+]

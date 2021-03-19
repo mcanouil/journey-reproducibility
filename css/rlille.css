@@ -1,0 +1,73 @@
+:root {
+  --font-colour: #D40000;
+  --bg-colour: #F2F2F2;
+  --main-logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg);
+  --side-logo: url(https://raw.githubusercontent.com/RLille/logos/master/RConsortium_Horizontal_Pantone.png);
+}
+
+.side-logo {
+  height: 77.13px;
+  width: 342.53px;
+  background-image: var(--side-logo);
+}
+
+#picture {
+  border-style: solid;
+  border-width: 2pt;
+  border-color: var(--font-colour);
+  border-radius: 50%;
+  padding: 5pt;
+}
+
+.title-slide {
+  background-color: var(--bg-colour);
+  border-top: 80px solid var(--bg-colour);
+}
+
+.title-slide h1  {
+  color: var(--font-colour);
+}
+
+.title-slide h2  {
+  color: var(--font-colour);
+}
+
+hr, .title-slide h2::after, .mline h1::after {
+  background-color: var(--font-colour);
+  color: var(--font-colour);
+}
+
+.hljs-github .hljs {
+  background: #FAE7E7;
+}
+
+.remark-inline-code {
+  background: #FAE7E7;
+}
+
+.title-slide a:hover {
+  color: var(--font-colour) !important;
+}
+
+.part-slide {
+  color: var(--font-colour);
+  background-color: var(--bg-colour);
+}
+
+.part-slide h1 {
+  color: var(--font-colour);
+  background-color: var(--bg-colour);
+}
+
+.part-slide a {
+  color: var(--font-colour);
+}
+
+.part-slide a:hover {
+  color: var(--font-colour) !important;
+}
+
+h1 .remark-inline-code {
+  background: var(--bg-colour);
+  color: var(--font-colour);
+}
