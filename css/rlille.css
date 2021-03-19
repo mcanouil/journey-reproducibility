@@ -67,6 +67,11 @@ hr, .title-slide h2::after, .mline h1::after {
   color: var(--font-colour) !important;
 }
 
+.part-slide h1 .remark-inline-code {
+  background: var(--font-colour);
+  color: var(--bg-colour);
+}
+
 h1 .remark-inline-code {
   background: var(--bg-colour);
   color: var(--font-colour);
