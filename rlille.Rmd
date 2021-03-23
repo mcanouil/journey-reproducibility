@@ -1,12 +1,15 @@
 ---
 params:
-  title: 'My Journey To Transparency And Reproducibility'
-  shortitle: 'My Journey To Reproducibility'
+  title: "My Journey To Transparency And Reproducibility"
   subtitle: '<i class = "fab fa-docker"></i> & <i class = "fab fa-r-project"></i>'
   author: 'Mickaël Canouil, *Ph.D.* (<a href = "http://m.canouil.fr/" target = "_blank"><i class = "fas fa-home"></i> m.canouil.fr</a>)'
-  institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille"
+  institute: "Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille"
   date: 'Thursday, the 15<sup><i style="font-size:0.5em;">th</i></sup> of April, 2021 – 19 h 00 (UTC + 1)'
-  theme: "rlille"
+title: '`r params[["title"]]`'
+subtitle: '`r params[["subtitle"]]`'
+author: '`r params[["author"]]`'
+institute: '`r params[["institute"]]`'
+date: '`r params[["date"]]`'
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -18,20 +21,13 @@ output:
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: | 
-        <div class="progress-bar-container">
-          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+        <div class = "progress-bar-container">
+          <div class = "progress-bar" style="width: calc(%current% / %total% * 100%);">
           </div>
         </div>
       ratio: "16:9"
       countIncrementalSlides: false
-title: '`r params[["shortitle"]]`'
-subtitle: '`r params[["subtitle"]]`'
-author: '`r params[["author"]]`'
-institute: '`r params[["institute"]]`'
-date: '`r params[["date"]]`'
 ---
-
-class: title-slide
 
 ```{r setup, include = FALSE}
 options("width" = 110)
@@ -50,8 +46,9 @@ suppressPackageStartupMessages({
   library(data.table)
   library(showtext)
 })
+```
 
-
+```{r setup-knitr, include = FALSE}
 ### knitr settings =================================================================================
 opts_chunk$set(
   eval = TRUE, # Default: TRUE
@@ -70,20 +67,17 @@ opts_chunk$set(
 )
 font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext_auto()
+```
 
-
+```{r setup-ggplot2, include = FALSE}
 ### Tables and Figures Theme =======================================================================
-theme_black <- function(
+theme_rlille <- function(
   base_size = 11,
   base_family = "",
   base_line_size = base_size / 22,
-  base_rect_size = base_size / 22,
-  theme = "mc"
+  base_rect_size = base_size / 22
 ) {
-  bc <- switch(EXPR = theme,
-    "mc" = c("#333333", "#7F7F7F", "#FFFFFF"),
-    "rlille" = c("#F2F2F2", "#CCCCCC", "#D40000")
-  )
+  bc <- c("#F2F2F2", "#CCCCCC", "#D40000")
   half_line <- base_size / 2
   ggplot2::theme(
     line = ggplot2::element_line(
@@ -232,7 +226,7 @@ theme_black <- function(
     complete = TRUE
   )
 }
-theme_set(theme_black(base_size = 18, base_family = "Alegreya Sans", theme = params[["theme"]]))
+theme_set(theme_rlille(base_size = 18, base_family = "Alegreya Sans"))
 theme_update(
   plot.title.position = "plot",
   plot.caption.position = "plot",
@@ -253,6 +247,8 @@ options(
 )
 ```
 
+class: title-slide
+
 ```{css, echo = FALSE}
 .l {
   float: left;
@@ -263,9 +259,6 @@ options(
   width: 85%;
 }
 ```
-
-
-<div class="main-logo"></div><div class="side-logo"></div>
 
 # `r params[["title"]]`
 
@@ -282,7 +275,7 @@ options(
 ]
 
 .slide-url[
-[m.canouil.fr/journey-reproducibility](https://m.canouil.fr/journey-reproducibility/)
+[m.canouil.fr/journey-reproducibility/rlille.html](https://m.canouil.fr/journey-reproducibility/rlille.html)
 ]
 
 ---
