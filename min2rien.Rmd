@@ -250,12 +250,6 @@ options(
 
 class: title-slide
 
-```{css, echo = FALSE}
-:root {
-  --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/mc.svg);
-}
-```
-
 # `r params[["title"]]`
 
 ## `r params[["subtitle"]]`
