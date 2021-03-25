@@ -264,7 +264,7 @@ class: title-slide
 
 ## `r params[["subtitle"]]`
 
-.l[<img src = "https://avatars1.githubusercontent.com/u/8896044?s=460&v=4" height = "120px" id = "picture" />]
+.l[<img src = "https://avatars.githubusercontent.com/u/8896044" height = "120px" id = "picture" />]
 
 .r[
 ### `r params[["author"]]`
@@ -287,8 +287,8 @@ class: title-slide
 class: part-slide
 
 .center[
-<a href="https://rlille.fr/" target="_blank"><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg" width = "200px"/></br>
-<img src="https://raw.githubusercontent.com/RLille/logos/master/RConsortium_Horizontal_Pantone.png" width = "200px"/>
+<a href="https://rlille.fr/" target="_blank"><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/rlille.svg" width = "200px"/></br>
+<img src="https://raw.githubusercontent.com/RLille/logos/main/RConsortium_Horizontal_Pantone.png" width = "200px"/>
 </br>
 <i style="font-size: 200%">rlille.fr</i>
 </a>

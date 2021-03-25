@@ -1,7 +1,7 @@
 :root {
   --font-colour: #333333;
   --bg-colour: #FAFAFA;
-  --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/mc.svg);
+  --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/mc.svg);
 }
 
 @import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");

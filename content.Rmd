@@ -17,14 +17,14 @@ class: part-slide
 
 .pull-left[
 * __Head of the Biostatistics Team__ of the __Inserm U1283 / CNRS UMR 8199__ unit _(Functional (Epi)genomics and Molecular Physiology of Diabetes and Related Diseases)_.  
-    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" />
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" />
     
 * __Doctor of Philosophy (Ph.D.) in Biostatistics__.
 
 * Authored __4 <i class = "fab fa-r-project"></i> packages__ on CRAN (more on Github).  
-    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/nacho.svg" width = "100px" />
-    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/insane.svg" width = "100px" />
-    <img src = "https://github.com/mcanouil/ggpacman/raw/master/man/figures/ggpacman.gif" width = "100px" />
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/nacho.svg" width = "100px" />
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/insane.svg" width = "100px" />
+    <img src = "https://github.com/mcanouil/ggpacman/raw/main/man/figures/ggpacman.gif" width = "100px" />
     
 * Contributed to __2 <i class = "fab fa-r-project"></i> packages__ on CRAN.
 
@@ -33,7 +33,7 @@ class: part-slide
 
 .pull-right[
 .center[
-<img src = "https://github.com/mcanouil/ggpacman/raw/master/man/figures/README-pacman-1.gif" height = "450px" />  
+<img src = "https://github.com/mcanouil/ggpacman/raw/main/man/figures/README-pacman-1.gif" height = "450px" />  
 _From_ `ggpacman` _on CRAN._  
 _It's only an <i class = "fab fa-r-project"></i> package to make a GIF, sorry!_
 ]
@@ -297,7 +297,7 @@ class: part-slide
 --
 
 <img src = "resources/umr1283_project.svg" style = "position:absolute; top: 12%; left: 53%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
-<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 35%; left: 75%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 35%; left: 75%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
 
@@ -563,7 +563,7 @@ RUN R -e 'renv::restore()'
 --
 
 <img src = "resources/umr1283_project_renv.svg" style = "position:absolute; top: 12%; left: 64%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
-<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 32%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 32%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 
 ---

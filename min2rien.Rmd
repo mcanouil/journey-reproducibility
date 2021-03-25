@@ -272,7 +272,7 @@ class: title-slide
 ---
 class: part-slide
 
-# <img src = "https://avatars1.githubusercontent.com/u/8896044?s=460&v=4" height = "150px" id = "picture" />
+# <img src = "https://avatars.githubusercontent.com/u/8896044" height = "150px" id = "picture" />
 
 ```{css, echo = FALSE}
 .column {

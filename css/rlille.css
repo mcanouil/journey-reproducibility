@@ -1,7 +1,7 @@
 :root {
   --font-colour: #D40000;
   --bg-colour: #F2F2F2;
-  --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/master/SVG/rlille.svg);
+  --logo: url(https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/rlille.svg);
 }
 
 .title-slide .slide-url a {
