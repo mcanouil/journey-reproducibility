@@ -3,8 +3,8 @@ title: "My Journey To Transparency And Reproducibility"
 subtitle: '<i class = "fab fa-docker"></i> & <i class = "fab fa-r-project"></i>'
 author: 'Mickaël Canouil, *Ph.D.* (<a href = "http://m.canouil.fr/" target = "_blank"><i class = "fas fa-home"></i> m.canouil.fr</a>)'
 institute: "_Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille_"
-date: 'Wednesday, the 14<sup><i style="font-size:0.5em;">th</i></sup> of April, 2021 – 11 h 00 (CEST / UTC + 2)'
-date2: 'Thursday, the 15<sup><i style="font-size:0.5em;">th</i></sup> of April, 2021 – 19 h 00 (CEST / UTC + 2)'
+date: 'Wednesday, the 14<sup><i style="font-size:0.5em;">th</i></sup> of April, 2021 – 11:00 (CEST / UTC + 2)'
+date2: 'Thursday, the 15<sup><i style="font-size:0.5em;">th</i></sup> of April, 2021 – 19:00 (CEST / UTC + 2)'
 params:
   content: [ 'content.Rmd' ]
 knit: (function(inputFile, encoding) rmarkdown::render(inputFile, encoding = encoding, output_file = "docs/index.html"))
