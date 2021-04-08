@@ -1,9 +1,9 @@
 class: part-slide
 
 ```{css, echo = FALSE}
-.red { color: #b20000; }
-.green { color: #00b200; }
-.blue { color: #0000b2; } 
+.red { color: #b22222; }
+.green { color: #22b222; }
+.blue { color: #2222b2; } 
 ```
 
 
@@ -143,11 +143,11 @@ background-size: cover
 ```
 
 
-# .bg-img[Infrastructure System]
+# .bg-img[System Infrastructure]
 
 ---
 
-# Infrastructure System
+# System Infrastructure
 
 <div style = "font-size: 1000%; color: #333; position: absolute; top: 35%; left: 42%;">
   <i class = "fas fa-server"></i>
@@ -600,7 +600,7 @@ RUN R -e 'renv::restore()'
 
 # How To Reduce Cognitive Load For New Users?
 
-+ .font150[Remaining issues]
++ .font150.red[__Remaining issues__]
 
     + Having to learn about system administration (_i.e._, Debian, Ubuntu, MacOS, Windows, _etc._) __can be a hassle__, especially for beginners.
 
@@ -608,15 +608,19 @@ RUN R -e 'renv::restore()'
 
 --
 
-+ .font150[Solutions] 
++ .font150.green[__Solutions__] 
 
     + ⇒ Build a Docker image with RStudio server, <i class = "fab fa-r-project"></i>, and with "all" required system libraries (Docker containers as a _daemon_).
+    
         + A user has __a non-root account__ to log in through a web browser to the IDE (_i.e._, RStudio).
+        
         + A user __can develop, code an analysis__ in a shared environment with a __project-oriented workflow__ built around `renv`.
+        
         + __No prior knowledge__ about Docker is required.
+        
         + Scripts can still be launched directly in Docker without a _daemon_.
     
-    + ⇒ __Singularity__ ([](https://sylabs.io/singularity/)) to run containers __without root privileges__, including Docker containers.
+    + ⇒ __Singularity__ ([sylabs.io](https://sylabs.io/)) to run containers __without root privileges__, including Docker containers.
 
 ---
 class: part-slide
@@ -629,13 +633,22 @@ class: part-slide
 
 # Next? Extend & Improve
 
+
 .font150[
++ Use [`targets`](https://docs.ropensci.org/targets/) from [__rOpenSci__](https://ropensci.org/) to design/improve analysis workflow.<sup>&ast;</sup>
+]
 
-+ Use [`targets`](https://docs.ropensci.org/targets/) from [__rOpenSci__](https://ropensci.org/) to design/improve analysis workflow.  
-<img src = "https://raw.githubusercontent.com/ropensci/targets/main/man/figures/logo-font.svg" width = "100px" />
+> The `targets` package is a Make-like pipeline toolkit for Statistics and data science in R. With targets, you can maintain a reproducible workflow without repeating yourself.  
+> `targets` learns how your pipeline fits together, skips costly runtime for tasks that are already up to date, runs only the necessary computation, supports implicit parallel computing, abstracts files as R objects, and shows tangible evidence that the results match the underlying code and data.
 
+.font150[
 + Switch to Singularity.
+]
 
+.font150[
 + Any suggestion?
+]
 
+.footnote[
+&ast; Since I initially made those slides, the [`umr1283`](https://github.com/umr1283/umr1283) <i class = "fab fa-r-project"></i> package has already been updated to allow the use of `targets` within our server infrastructure.
 ]
