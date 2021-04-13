@@ -1,0 +1,4 @@
+.Rproj.user
+renv
+renv.lock
+_depenencies.R
