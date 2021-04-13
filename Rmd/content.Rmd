@@ -28,7 +28,7 @@ class: part-slide
     
 * Contributed to __2 <i class = "fab fa-r-project"></i> packages__ on CRAN.
 
-* .font80[_Watched 2,850 movies so far ..._]
+* .font80[_Watched 2,861 movies so far ..._]
 ]
 
 .pull-right[
@@ -316,7 +316,7 @@ class: part-slide
 
 
 .text-block[
-* More than __100 <i class = "fab fa-r-project"></i> packages__ pre-installed.  
+* More than __100 <i class = "fab fa-r-project"></i> packages__ pre-installed (without counting dependencies).  
     ⇒ Increasing over time to ensure "old" projects still work.
 * Still no way to install <i class = "fab fa-r-project"></i> packages without compromising the transparency/reproducibility of the Dockerfile used.
 ]
@@ -331,14 +331,14 @@ class: part-slide
 
     + A project structure __clear__.
   
-    + __Flexibility at the system-level__ using a Dockerfile to build an image with <i class = "fab fa-r-project"></i> packages or any needed libraries.
+    + __Flexibility at the system-level__ using a Dockerfile to build an image with <i class = "fab fa-r-project"></i> packages or any needed system libraries.
     
     + __Reproducibility__, _i.e._, a project analysed using a specific Docker <i class = "fab fa-docker"></i> image can be re-analysed using that same Docker image.
     
 ]
 
 .pull-right.red[
-* .font150[__Bad__]
+* .font150[__Less Good__]
 
     + Requires some __knowledge__ about system administration and Docker <i class = "fab fa-docker"></i>.
     
@@ -588,7 +588,7 @@ RUN R -e 'renv::restore()'
 ]
 
 .pull-right.red[
-* .font150[__Bad__]
+* .font150[__Less Good__]
 
     + Requires some __knowledge__ about system administration and Docker <i class = "fab fa-docker"></i>.
     
@@ -610,7 +610,7 @@ RUN R -e 'renv::restore()'
 
 + .font150.green[__Solutions__] 
 
-    + ⇒ Build a Docker image with RStudio server, <i class = "fab fa-r-project"></i>, and with "all" required system libraries (Docker containers as a _daemon_).
+    + ⇒ Build a Docker image with an RStudio server, <i class = "fab fa-r-project"></i>, and "all" required system libraries (Docker containers as a _daemon_).
     
         + A user has __a non-root account__ to log in through a web browser to the IDE (_i.e._, RStudio).
         
