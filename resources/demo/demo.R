@@ -44,9 +44,15 @@ status()
 
 snapshot()
 
-remove("data.table")
+remove("Biobase")
 snapshot()
 
 ## Use system R packages or not
 activate()
 deactivate()
+
+
+# Remove renv architecture
+unlink("renv", recursive = TRUE)
+restore()
+isolate()
