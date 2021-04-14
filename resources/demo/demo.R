@@ -9,7 +9,8 @@ unlink("_dependencies.R", recursive = TRUE)
 library(renv)
 library(fs)
 fs::dir_tree()
-init()
+
+renv::init()
 fs::dir_tree(recurse = 1)
 
 
@@ -17,42 +18,42 @@ fs::dir_tree(recurse = 1)
 library(renv)
 
 Sys.setenv(RENV_DOWNLOAD_FILE_METHOD = "libcurl")
-equip()
+renv::equip()
 
 ## Install R packages
 # From CRAN/MRAN
-install("data.table") # install.packages("data.table")
+renv::install("data.table") # install.packages("data.table")
 packageVersion("data.table")
 
 # An old version
-install("data.table@1.12.0")
+renv::install("data.table@1.12.0")
 packageVersion("data.table")
 
 # From Github
-install("Rdatatable/data.table")
+renv::install("Rdatatable/data.table")
 packageVersion("data.table")
 
 # From Bioconductor
-install("bioc::Biobase")
+renv::install("bioc::Biobase")
 
 
 ## Record packages
-status()
+renv::status()
 
 writeLines("library(data.table)", "_dependencies.R")
-status()
+renv::status()
 
-snapshot()
+renv::snapshot()
 
-remove("Biobase")
-snapshot()
+renv::remove("Biobase")
+renv::snapshot()
 
 ## Use system R packages or not
-activate()
-deactivate()
+renv::activate()
+renv::deactivate()
 
 
 # Remove renv architecture
 unlink("renv", recursive = TRUE)
-restore()
-isolate()
+renv::restore()
+renv::isolate()
