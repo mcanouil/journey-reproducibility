@@ -16,20 +16,22 @@ class: part-slide
 # Who Am I? .font50[(_Definitely Not Iron Man ..._)]
 
 .pull-left[
-* __Head of the Biostatistics Team__ of the __Inserm U1283 / CNRS UMR 8199__ unit _(Functional (Epi)genomics and Molecular Physiology of Diabetes and Related Diseases)_.  
-    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" />
     
 * __Doctor of Philosophy (Ph.D.) in Biostatistics__.
 
-* Authored __4 <i class = "fab fa-r-project"></i> packages__ on CRAN (more on Github).  
+* __Head of the Biostatistics Team__ of the __Inserm U1283 / CNRS UMR 8199__ unit _(Functional (Epi)genomics and Molecular Physiology of Diabetes and Related Diseases)_.  
+    <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" />
+
+* Authored/Contributed __6 <i class = "fab fa-r-project"></i> packages__ on CRAN (more on Github).  
     <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/nacho.svg" width = "100px" />
     <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/insane.svg" width = "100px" />
     <img src = "https://github.com/mcanouil/ggpacman/raw/main/man/figures/ggpacman.gif" width = "100px" />
     
-* Contributed to __2 <i class = "fab fa-r-project"></i> packages__ on CRAN.
+* .font80[_Watched 2,862 movies so far ..._]
 
-* .font80[_Watched 2,861 movies so far ..._]
 ]
+
+
 
 .pull-right[
 .center[
@@ -635,15 +637,23 @@ class: part-slide
 
 
 .font150[
++ Switch to Singularity.
+]
+
+.font150[
 + Use [`targets`](https://docs.ropensci.org/targets/) from [__rOpenSci__](https://ropensci.org/) to design/improve analysis workflow.<sup>&ast;</sup>
 ]
+
+.pull-left.font90[
 
 > The `targets` package is a Make-like pipeline toolkit for Statistics and data science in R. With targets, you can maintain a reproducible workflow without repeating yourself.  
 > `targets` learns how your pipeline fits together, skips costly runtime for tasks that are already up to date, runs only the necessary computation, supports implicit parallel computing, abstracts files as R objects, and shows tangible evidence that the results match the underlying code and data.
 
-.font150[
-+ Switch to Singularity.
 ]
+
+.pull-right[
+<img src = "resources/targets.png" width = "90%" />
+ ]
 
 .font150[
 + Any suggestion?
