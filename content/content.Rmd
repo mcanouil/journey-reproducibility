@@ -56,29 +56,29 @@ class: part-slide
 
 # With A Project-oriented Workflow (_Or Not_)
 
-<img src = "resources/project5.png" width = 35% style = "position:absolute; top: 12%; left: 45%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/project5.png" width = 35% style = "position:absolute; top: 12%; left: 45%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
 
-<img src = "resources/project2.png" width = 34% style = "position:absolute; top: 65%; left: 65%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/project2.png" width = 34% style = "position:absolute; top: 65%; left: 65%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
 
-<img src = "resources/project3.png" width = 50% style = "position:absolute; top: 13%; left: 5%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/project3.png" width = 50% style = "position:absolute; top: 13%; left: 5%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 <img src = "https://media.giphy.com/media/116a8zosxwA0SI/giphy.gif" style = "position:absolute; top: 40%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
 
-<img src = "resources/project4.png" width = 30% style = "position:absolute; top: 72%; left: 10%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/project4.png" width = 30% style = "position:absolute; top: 72%; left: 10%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
 
-<img src = "resources/project6.png" width = 35% style = "position:absolute; top: 15%; left: 30%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/project6.png" width = 35% style = "position:absolute; top: 15%; left: 30%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
 
-<img src = "resources/project1.png" width = 45% style = "position:absolute; top: 15%; left: 47%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/project1.png" width = 45% style = "position:absolute; top: 15%; left: 47%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 ---
 class: part-slide
@@ -106,7 +106,7 @@ class: part-slide
 ]
 
 .pull-right[
-<img src = "resources/project_good1.png" width = "43%" style = "position:absolute; top: 22%;" />
+<img src = "content/media/project_good1.png" width = "43%" style = "position:absolute; top: 22%;" />
 ]
 
 --
@@ -124,7 +124,7 @@ _i.e._, data, scripts, and outputs should not live in the same directory!
 ]
 
 .pull-right[
-<img src = "resources/project2_version.png" width = "100%"/>
+<img src = "content/media/project2_version.png" width = "100%"/>
 ]
 
 --
@@ -294,11 +294,11 @@ class: part-slide
 
 # Build A Container With A Dockerfile
 
-<img src = "resources/dockerfile_v1.svg"/>
+<img src = "content/media/dockerfile_v1.svg"/>
 
 --
 
-<img src = "resources/umr1283_project.svg" style = "position:absolute; top: 12%; left: 53%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/umr1283_project.svg" style = "position:absolute; top: 12%; left: 53%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 35%; left: 75%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 --
@@ -560,11 +560,11 @@ RUN R -e 'renv::restore()'
 
 # Docker <i class = "fab fa-docker"></i> & `renv`
 
-<img src = "resources/dockerfile_v2.svg"/>
+<img src = "content/media/dockerfile_v2.svg"/>
 
 --
 
-<img src = "resources/umr1283_project_renv.svg" style = "position:absolute; top: 12%; left: 64%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
+<img src = "content/media/umr1283_project_renv.svg" style = "position:absolute; top: 12%; left: 64%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 <img src = "https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "100px" style = "position:absolute; top: 32%; left: 83%; box-shadow: 3px 5px 3px 1px #ffffff80;" />
 
 
@@ -652,7 +652,7 @@ class: part-slide
 ]
 
 .pull-right[
-<img src = "resources/targets.png" width = "90%" />
+<img src = "content/media/targets.png" width = "90%" />
  ]
 
 .font150[
