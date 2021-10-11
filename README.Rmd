@@ -7,7 +7,7 @@ output: github_document
 # journey-reproducibility
 
 <!-- badges: start -->
-![License](https://img.shields.io/github/license/mcanouil/journey-reproducibility?style=plastic)
+[![License](https://img.shields.io/github/license/mcanouil/journey-reproducibility)](LICENSE)
 <!-- badges: end -->
 
 Some slides about my journey towards more reproducibility.

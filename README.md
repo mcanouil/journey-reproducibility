@@ -1,5 +1,12 @@
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # journey-reproducibility
+
+<!-- badges: start -->
+
+[![License](https://img.shields.io/github/license/mcanouil/journey-reproducibility)](LICENSE)
+<!-- badges: end -->
 
 Some slides about my journey towards more reproducibility.
 
